@@ -7,28 +7,29 @@ public class Ex704
 	public static void main(String[] args)
 	{
 		Scanner key = new Scanner(System.in);
-		Boolean run = true;
+		Boolean passwordMatch = false;
+		String password;
+		String login;
+		String passwordConfirm;
 
-		while (run)
+		System.out.println(
+				"Please input a login, a password and a password confirmation. \n" + "NOTE: Press enter after each.");
+		do
 		{
-			System.out.println("Please input a login, a password and a password confirmation. \n"
-					+ "NOTE: Press enter after each.");
-			String login = key.nextLine();
-			String password = key.nextLine();
-			String passwordConfirm = key.nextLine();
+			login = key.nextLine();
+			password = key.nextLine();
+			passwordConfirm = key.nextLine();
 
-			Boolean passwordMatch = password.equals(passwordConfirm);
+			passwordMatch = password.equals(passwordConfirm);
 
 			if (passwordMatch)
 			{
 				key.close();
 				// printing confirmation to user
-				System.out.printf("Password confirmation matches! You login is \"%s\"", login);
-				// ending loop
-				run = false;
-			}
-			else
-				System.out.println("Password did not match, please re-enter");
-		}
+				System.out.printf("Password confirmation matches!\n Your login is \"%s\"\n Your password is %s", login,
+						password);
+			} else
+				System.out.println("Password did not match, please re-enter login, password and confirmation password");
+		} while (!passwordMatch);
 	}
 }
