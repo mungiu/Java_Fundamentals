@@ -17,7 +17,7 @@ public class Ex1004_3
 			sum += input;
 			input--;
 		}
-
+		key.close();
 		System.out.println(sum);
 	}
 }

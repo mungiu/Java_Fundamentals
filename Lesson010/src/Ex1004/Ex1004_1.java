@@ -8,7 +8,6 @@ public class Ex1004_1
 	public static void main(String[] args)
 	{
 		NumberFormat decimals3 = new DecimalFormat("0.000");
-		NumberFormat decimals0 = new DecimalFormat("0.0");
 		double numerator = 1;
 		double denominator = 30;
 
