@@ -269,10 +269,15 @@ public class MyDate
 	/** Checks if values inside the object are equal */
 	public boolean equals(MyDate date)
 	{
-		if (this.day == date.day && this.month == date.month && this.year == date.year)
-			return true;
-		else
-			return false;
+		// if (this.day == date.day && this.month == date.month && this.year ==
+		// date.year)
+		// return true;
+		// else
+		// return false;
+
+		// NOTE: this is the short version of upper, since boolean can only return true
+		// or false anyway
+		return (this.day == date.day && month == date.month && year == date.year);
 	}
 
 	@Override
