@@ -62,8 +62,10 @@ public class Garage
 			// starting to check each location inside both garages
 			for (int i = 0; i < parkingsArr.length; i++)
 			{
+				// if both null continue
 				if (parkingsArr[i] == null && _garage.parkingsArr[i] == null)
 					continue;
+				// if both have same value (not reference) continue
 				else if (parkingsArr[i].equals(_garage.parkingsArr[i]))
 					continue;
 				else
