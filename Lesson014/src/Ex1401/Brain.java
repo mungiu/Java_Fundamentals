@@ -2,101 +2,102 @@ package Ex1401;
 
 public class Brain
 {
-	private String activeMemoryItem;
-	private String passiveMemoryItemOne;
-	private String passiveMemoryItemTwo;
+    private String[] memoryItems;
 
-	public Brain()
+    public Brain(int arraySize)
+    {
+	memoryItems = new String[arraySize];
+	for (int i = 0; i < memoryItems.length; i++)
+	    memoryItems[i] = " ";
+    }
+
+    public int getIQ()
+    {
+	int tempIq = 0;
+
+	// checking biggest > 20 and smallest > 10
+	for (int i = 0; i < memoryItems.length; i++)
 	{
-		this.activeMemoryItem = " ";
-		this.passiveMemoryItemOne = " ";
-		this.passiveMemoryItemTwo = " ";
+	    if (i + 1 < memoryItems.length)
+		if (Math.max(memoryItems[i].length(), memoryItems[i + 1].length()) > 20
+			&& Math.min(memoryItems[i].length(), memoryItems[i + 1].length()) > 10)
+		    tempIq = 130;
+		else if (Math.min(memoryItems[i].length(), memoryItems[i + 1].length()) > 10)
+		    tempIq = 100;
+		else if (Math.min(memoryItems[i].length(), memoryItems[i + 1].length()) < 10 || memoryItems[i] == null)
+		    tempIq = 70;
 	}
 
-	public int getIQ()
-	{
-		if ((activeMemoryItem.length() > 20 || passiveMemoryItemOne.length() > 20 || passiveMemoryItemTwo.length() > 20)
-				&& (activeMemoryItem.length() > 10 && passiveMemoryItemOne.length() > 10
-						&& passiveMemoryItemTwo.length() > 10))
-			return 130;
-		else if (activeMemoryItem.length() > 10 && passiveMemoryItemOne.length() > 10
-				&& passiveMemoryItemTwo.length() > 10)
-			return 100;
-		else if ((activeMemoryItem.length() < 10 || passiveMemoryItemOne.length() < 10
-				|| passiveMemoryItemTwo.length() < 10)
-				|| (activeMemoryItem == null || passiveMemoryItemOne == null || passiveMemoryItemTwo == null))
-			return 70;
-		else
-			return 0;
-	}
+	return tempIq;
+    }
 
-	public boolean isBrainDamaged()
-	{
-		if ((activeMemoryItem == null || passiveMemoryItemOne == null || passiveMemoryItemTwo == null))
-			return true;
-		else
-			return false;
-	}
+    public boolean isBrainDamaged()
+    {
+	for (int i = 0; i < memoryItems.length; i++)
+	    if (memoryItems[i] == null)
+		return true;
 
-	/** Writes info to active memory */
-	public void remember(String info)
-	{
-		// NOTE: Copying string values nor reference points
-		passiveMemoryItemTwo = new String(passiveMemoryItemOne);
-		passiveMemoryItemOne = new String(activeMemoryItem);
-		activeMemoryItem = new String(info);
-	}
+	return false;
+    }
 
-	public void refreshMemory(String info)
-	{
-		if (info.equals(passiveMemoryItemOne))
-		{
-			passiveMemoryItemTwo = new String(activeMemoryItem);
-			activeMemoryItem = new String(passiveMemoryItemOne);
-		} else if (info.equals(passiveMemoryItemTwo))
-		{
-			passiveMemoryItemOne = new String(activeMemoryItem);
-			activeMemoryItem = new String(passiveMemoryItemTwo);
-		}
-	}
+    /** Writes info to active memory */
+    public void remember(String info)
+    {
+	// NOTE: Copying string values nor reference points
+	for (int i = memoryItems.length; i > 0; i--)
+	    if (i - 1 > 0)
+		memoryItems[i - 1] = memoryItems[i - 2];
 
-	/** Checks if info has been recorded in one of memory variables */
-	public boolean recall(String info)
-	{
-		if (activeMemoryItem != null || activeMemoryItem.equals(info))
-			return true;
-		else if (passiveMemoryItemOne != null || passiveMemoryItemOne.equals(info))
-			return true;
-		else if (passiveMemoryItemTwo != null || passiveMemoryItemTwo.equals(info))
-			return true;
-		else
-			return false;
-	}
+	memoryItems[0] = info;
+    }
 
-	/** Retrieves active memory item */
-	public String recall()
-	{
-		return activeMemoryItem;
-	}
+    public void refreshMemory(String info)
+    {
+	String _memorySwap = null;
 
-	@Override
-	public String toString()
-	{
-		return "I remember: " + activeMemoryItem + ". I remember a bit less about: " + passiveMemoryItemOne
-				+ ". I almost forgot about: " + passiveMemoryItemTwo;
-	}
+	for (int i = 1; i < memoryItems.length; i++)
+	    if (info.equals(memoryItems[i]))
+	    {
+		_memorySwap = memoryItems[i];
+		memoryItems[i] = memoryItems[0];
+		memoryItems[0] = _memorySwap;
+	    }
+    }
 
-	@Override
-	public boolean equals(Object obj)
+    /** Checks if info has been recorded in one of memory variables */
+    public boolean recall(String info)
+    {
+	for (int i = 0; i < memoryItems.length; i++)
+	    if (memoryItems[i] == info)
+		return true;
+
+	return false;
+    }
+
+    /** Retrieves active memory item */
+    public String recall()
+    {
+	return memoryItems[0];
+    }
+
+    @Override
+    public String toString()
+    {
+	return "I remember: " + memoryItems[0] + ". I remember a bit less about: " + memoryItems[1]
+		+ ". I almost forgot about: " + memoryItems[2];
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+	if (!(obj instanceof Brain))
+	    return false;
+	else
 	{
-		if (!(obj instanceof Brain))
-			return false;
-		else
-		{
-			Brain _brain = (Brain) obj;
-			return (this.activeMemoryItem == _brain.activeMemoryItem
-					&& this.passiveMemoryItemOne == _brain.passiveMemoryItemOne
-					&& this.passiveMemoryItemTwo == _brain.passiveMemoryItemTwo);
-		}
+	    Brain _brain = (Brain) obj;
+	    return (this.memoryItems[0].equals(_brain.memoryItems[0])
+		    && this.memoryItems[1].equals(_brain.memoryItems[1])
+		    && this.memoryItems[2].equals(_brain.memoryItems[2]));
 	}
+    }
 }
