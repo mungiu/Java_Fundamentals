@@ -1,5 +1,7 @@
 package practice_MidtermExam_1;
 
+import java.util.Arrays;
+
 public class ServiceBookTest
 {
 	public static void main(String[] args)
@@ -21,9 +23,12 @@ public class ServiceBookTest
 		System.out.println(book1.equals(book2));
 		System.out.println(s1.equals(s2));
 		System.out.println(d1.equals(d2));
-		
-		
+		System.out.println();
+
 		Service[] s = book1.getAllServices();
 		Date d4 = book1.getDateOfLastService();
+
+		System.out.println(Arrays.toString(s));
+		System.out.println(d4);
 	}
 }

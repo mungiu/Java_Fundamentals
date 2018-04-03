@@ -67,7 +67,7 @@ public class ServiceBook
 		{
 			ServiceBook _temp = (ServiceBook) obj;
 
-			return _temp.getAllServiceMilages() == getAllServiceMilages();
+		return services.equals(_temp.services);
 		}
 	}
 
