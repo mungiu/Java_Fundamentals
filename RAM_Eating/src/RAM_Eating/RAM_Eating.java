@@ -6,7 +6,7 @@ public class RAM_Eating
 {
     public static void main(String[] args)
     {
-	Vector v = new Vector();
+	Vector<byte[]> v = new Vector<byte[]>();
 	while (true)
 	{
 	    byte b[] = new byte[1048576];
