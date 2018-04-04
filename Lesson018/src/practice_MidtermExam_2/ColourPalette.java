@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ColourPalette
 {
 	private int numberOfColours;
-	ArrayList<Colour> colours;
+	private ArrayList<Colour> colours;
 
 	public ColourPalette(int maxNumberofColours)
 	{
