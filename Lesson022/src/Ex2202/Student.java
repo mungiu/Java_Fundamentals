@@ -9,10 +9,10 @@ public class Student
 	{
 		this.name = name;
 
-		if (grade != -3 && grade != 0 && grade != 2 && grade != 4 && grade != 10 && grade != 12)
+		if (grade == -3 || grade == 0 || grade == 2 || grade == 4 || grade == 7 || grade == 10 || grade == 12)
 			this.grade = grade;
 		else
-			throw new IllegalGradeException();
+			throw new IllegalGradeException(grade); 
 	}
 
 	public String getName()
@@ -27,10 +27,10 @@ public class Student
 
 	public void setGrade(int grade)
 	{
-		if (grade != -3 && grade != 0 && grade != 2 && grade != 4 && grade != 10 && grade != 12)
+		if (grade == -3 || grade == 0 || grade == 2 || grade == 4 || grade == 7 || grade == 10 || grade == 12)
 			this.grade = grade;
 		else
-			throw new IllegalGradeException();
+			throw new IllegalGradeException(grade);
 	}
 
 	public String toString()

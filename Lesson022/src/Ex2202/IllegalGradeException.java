@@ -12,9 +12,8 @@ public class IllegalGradeException extends RuntimeException
 		super("Invalid grade");
 	}
 
-	public IllegalGradeException(String msg)
+	public IllegalGradeException(int grade)
 	{
-		this();
-		System.out.print(msg);
+		super("Invalid grade: " + grade);
 	}
 }

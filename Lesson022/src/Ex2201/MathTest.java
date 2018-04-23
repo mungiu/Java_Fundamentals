@@ -1,6 +1,5 @@
 package Ex2201;
 
-import java.security.InvalidParameterException;
 import java.util.Scanner;
 
 public class MathTest
