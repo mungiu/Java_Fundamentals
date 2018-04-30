@@ -68,7 +68,7 @@ public class EmployeeList
 		return totalEarningsPerWeek;
 	}
 
-	//ASK ALLAN IF CORRECT
+	// ASK ALLAN IF CORRECT
 	@Override
 	public boolean equals(Object obj)
 	{
@@ -78,12 +78,8 @@ public class EmployeeList
 		{
 			EmployeeList temp = (EmployeeList) obj;
 
-			if (!(super.equals(temp)) || !(temp.equals(this)))
-				return false;
-			else if (!(Arrays.equals(getAllEmployees(), temp.getAllEmployees())))
-				return false;
-			else
-				return true;
+			// using ArrayList equals method
+			return (employees.equals(temp.employees) && size==temp.size);
 		}
 	}
 }
