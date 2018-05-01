@@ -13,13 +13,11 @@ public class Main
 	public static void main(String[] args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		// helps write to file
+		// used to write to binary file
 		FileOutputStream fileOut = null;
-		// receives data to be written to file
 		ObjectOutputStream write = null;
-		// help read from file
+		// used to read from binary file
 		FileInputStream fileIn = null;
-		// receives data to be outputed to screen
 		ObjectInputStream read = null;
 		int nrOfInts = 0;
 
@@ -36,6 +34,7 @@ public class Main
 
 			// writing random integers as binary to file
 			for (int i = 0; i < nrOfInts; i++)
+
 				write.writeObject((int) (Math.random() * 100));
 
 			// this closes and saves the writer
@@ -46,9 +45,11 @@ public class Main
 			fileIn = new FileInputStream(keyboard.nextLine());
 			read = new ObjectInputStream(fileIn);
 
-			System.out.println(read.readObject());
+			for (int i = 0; i < nrOfInts; i++)
+				System.out.println(read.readObject());
+
 			keyboard.close();
-			
+
 			// closes the read stream
 			read.close();
 
