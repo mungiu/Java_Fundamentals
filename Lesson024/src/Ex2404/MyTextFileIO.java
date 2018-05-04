@@ -1,4 +1,4 @@
-package Ex2405;
+package Ex2404;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -68,7 +68,6 @@ public class MyTextFileIO
 		read.close();
 
 		return read.nextLine();
-		
 	}
 
 	public String[] readingArrayFromFile(String fileName) throws FileNotFoundException

@@ -1,5 +1,6 @@
-package Ex2405;
+package Ex2404;
 
+import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -44,9 +45,9 @@ public class MyFileIO
 		read.close();
 
 		return read.readObject();
-
 	}
 
+	// TODO: check if function finalized and working
 	public Object[] readArrFromFile(String fileName) throws FileNotFoundException, IOException, ClassNotFoundException
 	{
 		ArrayList<Object> tempArrList = new ArrayList<Object>();
@@ -57,16 +58,19 @@ public class MyFileIO
 
 		while (true)
 		{
-			if (read.readObject() != null)
+			try
+			{
 				tempArrList.add(read.readObject());
-			else
+			} catch (EOFException eof)
+			{
 				break;
+			}
 		}
+		read.close();
 
 		tempObjArr = new Object[tempArrList.size()];
 		tempObjArr = tempArrList.toArray(tempObjArr);
-		read.close();
-		
+
 		return tempObjArr;
 	}
 }
