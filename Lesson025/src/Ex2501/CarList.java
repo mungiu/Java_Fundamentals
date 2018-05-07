@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class CarList implements Serializable
 {
+	private static final long serialVersionUID = 1578846812242725918L;
+	
 	private ArrayList<Car> cars = new ArrayList<Car>();
 
 	public int size()

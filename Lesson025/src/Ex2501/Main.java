@@ -17,14 +17,12 @@ public class Main
 		carList.addCar(car1);
 		carList.addCar(car2);
 
-		fileAdapter.deleteCar(car1);
-
 		fileAdapter.addCars(carList);
+		
+		fileAdapter.deleteCar(car2);
 
 		fileAdapter.deleteCarByRegNumber("X2");
-		
-		fileAdapter.getAllCars("text.bin");
-		
+
 		System.out.println(fileAdapter.getAllCars("test.bin"));
 	}
 }

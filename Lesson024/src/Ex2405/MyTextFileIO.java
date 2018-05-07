@@ -33,7 +33,7 @@ public class MyTextFileIO
 
 		for (int i = 0; i < stringArrToWrite.length; i++)
 			write.println(stringArrToWrite[i]);
-		
+
 		write.close();
 	}
 
@@ -57,7 +57,7 @@ public class MyTextFileIO
 
 		for (int i = 0; i < stringArrToAppend.length; i++)
 			write.println(stringArrToAppend[i]);
-		
+
 		write.close();
 	}
 
@@ -65,10 +65,10 @@ public class MyTextFileIO
 	{
 		fileIn = new FileInputStream(fileName);
 		read = new Scanner(fileIn);
+		String temp = read.nextLine();
 		read.close();
-
-		return read.nextLine();
 		
+		return temp;
 	}
 
 	public String[] readingArrayFromFile(String fileName) throws FileNotFoundException

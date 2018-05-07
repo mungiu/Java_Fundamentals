@@ -1,7 +1,11 @@
 package Ex2501;
 
-public class Owner
+import java.io.Serializable;
+
+public class Owner implements Serializable
 {
+	private static final long serialVersionUID = 9021889153739599741L;
+	
 	private String firstName;
 	private String lastName;
 

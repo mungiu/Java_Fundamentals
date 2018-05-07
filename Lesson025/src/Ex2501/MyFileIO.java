@@ -41,9 +41,11 @@ public class MyFileIO
 	{
 		fileIn = new FileInputStream(fileName);
 		read = new ObjectInputStream(fileIn);
+
+		Object temp = read.readObject();
 		read.close();
 
-		return read.readObject();
+		return temp;
 
 	}
 
