@@ -58,8 +58,8 @@ public class Car implements Serializable
 		else
 		{
 			Car temp = (Car) obj;
-			return temp.make == make && temp.model == model && temp.owner == owner && temp.regNumber == regNumber
-					&& temp.year == year;
+			return (temp.make == make && temp.model == model && temp.owner == owner && temp.regNumber == regNumber
+					&& temp.year == year);
 		}
 	}
 }

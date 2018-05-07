@@ -114,7 +114,7 @@ public class CarFileAdapter
 		}
 
 		for (int i = 0; i < tempCarList.size(); i++)
-			if (tempCarList.getCar(i) != car)
+			if (!tempCarList.getCar(i).equals(car))
 				newCarList.addCar(tempCarList.getCar(i));
 
 		try
@@ -132,7 +132,7 @@ public class CarFileAdapter
 			System.exit(1);
 		}
 	}
-	
+
 	public void deleteCarByRegNumber(String carRegNumber)
 	{
 		MyFileIO fileIO = new MyFileIO();
@@ -160,7 +160,7 @@ public class CarFileAdapter
 		}
 
 		for (int i = 0; i < tempCarList.size(); i++)
-			if (tempCarList.getCar(i).getRegNumber() != carRegNumber)
+			if (!tempCarList.getCar(i).getRegNumber().equals(carRegNumber))
 				newCarList.addCar(tempCarList.getCar(i));
 
 		try
