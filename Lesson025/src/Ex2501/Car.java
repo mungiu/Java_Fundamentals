@@ -1,7 +1,11 @@
 package Ex2501;
 
-public class Car
+import java.io.Serializable;
+
+public class Car implements Serializable
 {
+	private static final long serialVersionUID = 965569400750494777L;
+	
 	private String regNumber, make, model;
 	private int year;
 	private Owner owner;

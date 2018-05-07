@@ -66,7 +66,7 @@ public class MyFileIO
 		tempObjArr = new Object[tempArrList.size()];
 		tempObjArr = tempArrList.toArray(tempObjArr);
 		read.close();
-		
+
 		return tempObjArr;
 	}
 }
