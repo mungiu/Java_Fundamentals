@@ -1,4 +1,4 @@
-package Ex2701;
+package Ex2701_Calculator;
 
 public class Main
 {

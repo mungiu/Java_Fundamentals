@@ -1,0 +1,22 @@
+Adrienn,Rozgonyi,Hungary
+Aleksander,Cichon,Poland
+Alicja,Siudak,Poland
+Andrei,Mungiu,Romania
+Chunhui,Liu,China
+Daniela,Kristiansen,Spain
+Eric,Volmer,Estonia
+Eva,Liskova,Slovakia
+Ionut,Brasoveanu,Romania
+Jacek,Zubrzycki,Poland
+Jakub,Piga,Slovakia
+Leviticus,Lyons,England
+Maria,Failli,Italy
+Mihai-Nicolae,Draghiciu,Romania
+Naya,Al Tahan,Denmark
+Patricia,Poracova,Slovakia
+Ronalds,Kalnins,Latvia
+Simon,Tirsgaard,Denmark
+Tatjana,Afanasjeva,Latvia
+Valeriu,Bordei,Romania
+Wirginia,Szoltysek,Poland
+Yuxuan,Zhang,China
