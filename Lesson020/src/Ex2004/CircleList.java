@@ -5,8 +5,6 @@ import java.util.ArrayList;
 public class CircleList
 {
 	private ArrayList<Circle> circles;
-	private int capacity = 0;
-	
 	public int getNumberOfCircles()
 	{
 		return circles.size();
@@ -14,7 +12,6 @@ public class CircleList
 
 	public CircleList(int capacity)
 	{
-		this.capacity = capacity;
 		circles = new ArrayList<Circle>(capacity);
 	}
 

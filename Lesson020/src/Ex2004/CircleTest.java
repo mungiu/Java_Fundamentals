@@ -6,8 +6,6 @@ public class CircleTest
 	{
 		Circle c1 = new Circle(1, 1, 10);
 
-		Point p1 = c1.getCenter();
-
 		c1.getCenter().move(0, 150);
 
 		Circle c2 = new Circle(c1.getCenter().getX(), c1.getCenter().getY(), 10);
