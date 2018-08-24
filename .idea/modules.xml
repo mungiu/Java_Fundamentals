@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java_Fundamentals.iml" filepath="$PROJECT_DIR$/Java_Fundamentals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson001/Lesson001.iml" filepath="$PROJECT_DIR$/Lesson001/Lesson001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson002/Lesson002.iml" filepath="$PROJECT_DIR$/Lesson002/Lesson002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson003/Lesson003.iml" filepath="$PROJECT_DIR$/Lesson003/Lesson003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson004/Lesson004.iml" filepath="$PROJECT_DIR$/Lesson004/Lesson004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson005/Lesson005.iml" filepath="$PROJECT_DIR$/Lesson005/Lesson005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson006/Lesson006.iml" filepath="$PROJECT_DIR$/Lesson006/Lesson006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson008/Lesson008.iml" filepath="$PROJECT_DIR$/Lesson008/Lesson008.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson009/Lesson009.iml" filepath="$PROJECT_DIR$/Lesson009/Lesson009.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson010/Lesson010.iml" filepath="$PROJECT_DIR$/Lesson010/Lesson010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson011/Lesson011_MyDate.iml" filepath="$PROJECT_DIR$/Lesson011/Lesson011_MyDate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson012/Lesson012_Car_Geometry.iml" filepath="$PROJECT_DIR$/Lesson012/Lesson012_Car_Geometry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson013/Lesson013_Car_MyDate.iml" filepath="$PROJECT_DIR$/Lesson013/Lesson013_Car_MyDate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson014/Lesson014_MyDate_Room.iml" filepath="$PROJECT_DIR$/Lesson014/Lesson014_MyDate_Room.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson016/Lesson016_Notebook_Exam.iml" filepath="$PROJECT_DIR$/Lesson016/Lesson016_Notebook_Exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson017/Lesson017_Notebook_Grade.iml" filepath="$PROJECT_DIR$/Lesson017/Lesson017_Notebook_Grade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson018/Lesson018_MidtermPractice.iml" filepath="$PROJECT_DIR$/Lesson018/Lesson018_MidtermPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson020/Lesson020_Extends.iml" filepath="$PROJECT_DIR$/Lesson020/Lesson020_Extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson021/Lesson021_Extends.iml" filepath="$PROJECT_DIR$/Lesson021/Lesson021_Extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson022/Lesson022_Extends.iml" filepath="$PROJECT_DIR$/Lesson022/Lesson022_Extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson23/Lesson023_Extends_Notebook_MyDate.iml" filepath="$PROJECT_DIR$/Lesson23/Lesson023_Extends_Notebook_MyDate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson024/Lesson024_Text&amp;Bin_FileReader.iml" filepath="$PROJECT_DIR$/Lesson024/Lesson024_Text&amp;Bin_FileReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson025/Lesson025_Text&amp;Bin_FileReader.iml" filepath="$PROJECT_DIR$/Lesson025/Lesson025_Text&amp;Bin_FileReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson026_Interfaces/Lesson026_Interfaces.iml" filepath="$PROJECT_DIR$/Lesson026_Interfaces/Lesson026_Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson027_Interfaces/Lesson027_Interfaces_Tabs_Search.iml" filepath="$PROJECT_DIR$/Lesson027_Interfaces/Lesson027_Interfaces_Tabs_Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson030_ExamPrep/Lesson030_ExamPrep.iml" filepath="$PROJECT_DIR$/Lesson030_ExamPrep/Lesson030_ExamPrep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test_1/Lesson031_FinalExamPrep.iml" filepath="$PROJECT_DIR$/Test_1/Lesson031_FinalExamPrep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RAM_Eating/RAM_Eating.iml" filepath="$PROJECT_DIR$/RAM_Eating/RAM_Eating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Pluralsight_Java_Fundamentals/_Pluralsight_Java_Fundamentals.iml" filepath="$PROJECT_DIR$/_Pluralsight_Java_Fundamentals/_Pluralsight_Java_Fundamentals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven_addingNumbers/maven_addingNumbers.iml" filepath="$PROJECT_DIR$/maven_addingNumbers/maven_addingNumbers.iml" />
+    </modules>
+  </component>
+</project>
